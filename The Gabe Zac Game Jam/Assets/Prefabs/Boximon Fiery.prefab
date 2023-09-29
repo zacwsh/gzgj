@@ -967,6 +967,7 @@ GameObject:
   - component: {fileID: 3440627987911267901}
   - component: {fileID: 5217913188591437015}
   - component: {fileID: -1565649762236438643}
+  - component: {fileID: 3759255911655679261}
   m_Layer: 0
   m_Name: Boximon Fiery
   m_TagString: Enemy
@@ -1062,6 +1063,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b99ccd9481b469941b0c3ccb712b9156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &3759255911655679261
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7855783842077041453}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.7585449, y: 1.0661349, z: 0.66070557}
+  m_Center: {x: -0.0028686523, y: 0.5218917, z: -0.00289917}
 --- !u!1 &8263391662672651155
 GameObject:
   m_ObjectHideFlags: 0
