@@ -17,5 +17,13 @@ public class Gun : MonoBehaviour
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
         }
+
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(bulletPrefab);
+        Destroy(other.gameObject);
     }
 }
