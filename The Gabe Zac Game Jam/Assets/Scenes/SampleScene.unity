@@ -149,7 +149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 92cd1d294b165cc4bbb84c1fbc8d22a1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.93
+      value: 16.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 92cd1d294b165cc4bbb84c1fbc8d22a1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -190,13 +190,43 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 92cd1d294b165cc4bbb84c1fbc8d22a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 275101735}
   m_SourcePrefab: {fileID: 100100000, guid: 92cd1d294b165cc4bbb84c1fbc8d22a1, type: 3}
 --- !u!1 &97187373 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f410a7c2b84b5ab4a84e02b235001ff6, type: 3}
   m_PrefabInstance: {fileID: 1794216253}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &275101731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 92cd1d294b165cc4bbb84c1fbc8d22a1, type: 3}
+  m_PrefabInstance: {fileID: 3596603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &275101735
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275101731}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1291710161511281072, guid: 92cd1d294b165cc4bbb84c1fbc8d22a1, type: 3}
 --- !u!1 &624268267
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,7 +661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpawnPoint: {fileID: 1786086725}
   bulletPrefab: {fileID: 1311290861401530, guid: 312b31977ed9b2d48a14849ebb8c7fb3, type: 3}
-  bulletSpeed: 10
+  bulletSpeed: 100
 --- !u!1001 &4947778215814907238
 PrefabInstance:
   m_ObjectHideFlags: 0
