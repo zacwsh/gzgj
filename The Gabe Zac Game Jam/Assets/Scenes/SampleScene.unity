@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swarmerPrefab: {fileID: 7855783842077041453, guid: b4f2c8afd249dba499f519d21349f401, type: 3}
-  swarmerInterval: 3.5
+  swarmerInterval: 0.1
 --- !u!4 &624268269
 Transform:
   m_ObjectHideFlags: 0
@@ -641,7 +641,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5705788933358706491, guid: b4f2c8afd249dba499f519d21349f401, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.4
+      value: -1.94
       objectReference: {fileID: 0}
     - target: {fileID: 5705788933358706491, guid: b4f2c8afd249dba499f519d21349f401, type: 3}
       propertyPath: m_LocalPosition.y
@@ -649,7 +649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5705788933358706491, guid: b4f2c8afd249dba499f519d21349f401, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.27
+      value: 6.28
       objectReference: {fileID: 0}
     - target: {fileID: 5705788933358706491, guid: b4f2c8afd249dba499f519d21349f401, type: 3}
       propertyPath: m_LocalRotation.w
