@@ -226,8 +226,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb34bc5a6624224582c5c648875d066, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swarmerPrefab: {fileID: 7855783842077041453, guid: b4f2c8afd249dba499f519d21349f401, type: 3}
-  swarmerInterval: 3.5
+  enemyPrefab: {fileID: 7855783842077041453, guid: b4f2c8afd249dba499f519d21349f401, type: 3}
+  enemyCount: 0
+  waveNumber: 1
 --- !u!4 &624268269
 Transform:
   m_ObjectHideFlags: 0
