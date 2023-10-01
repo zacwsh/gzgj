@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public static event Action<Enemy> OnEnemyKilled;
-    [SerializeField] float health, maxHealth = 3f;
+    public static event Action OnPlayerDeath;
 
     [SerializeField] float moveSpeed = 12f;
     Rigidbody rb;
@@ -24,7 +23,6 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        health = maxHealth;
         target = GameObject.Find("FirstPersonController").transform;
     }
 
@@ -51,7 +49,8 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Destroy(collision.gameObject);
+            Debug.Log("You're dead");
+            OnPlayerDeath?.Invoke();
         }
     }
 
