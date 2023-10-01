@@ -24,6 +24,6 @@ public class UIManager : MonoBehaviour
 
     public void Restartlevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetSceneByName("Main Menu").buildIndex);
     }
 }
