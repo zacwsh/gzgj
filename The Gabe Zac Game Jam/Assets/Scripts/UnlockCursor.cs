@@ -10,7 +10,7 @@ public class UnlockCursor : MonoBehaviour
         Cursor.visible = true; // Show the cursor
     }
 
-    private void Awake()
+    private void Update()
     {
         UnlockAndShowCursor();
     }
