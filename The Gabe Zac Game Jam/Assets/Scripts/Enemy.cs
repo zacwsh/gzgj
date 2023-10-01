@@ -13,7 +13,11 @@ public class Enemy : MonoBehaviour
     Transform target;
     Vector3 moveDirection;
 
-
+    public void UnlockAndShowCursor()
+    {
+        Cursor.lockState = CursorLockMode.None; // Unlock the cursor
+        Cursor.visible = true; // Show the cursor
+    }
 
     private void Awake()
     {
@@ -53,6 +57,7 @@ public class Enemy : MonoBehaviour
             Debug.Log("You're dead");
             OnPlayerDeath?.Invoke();
             SceneManager.LoadScene("DeathScene");
+            UnlockAndShowCursor();
         }
     }
 
