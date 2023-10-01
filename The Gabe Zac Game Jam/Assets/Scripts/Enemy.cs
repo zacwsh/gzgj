@@ -52,6 +52,7 @@ public class Enemy : MonoBehaviour
         {
             Debug.Log("You're dead");
             OnPlayerDeath?.Invoke();
+            SceneManager.LoadScene("DeathScene");
         }
     }
 

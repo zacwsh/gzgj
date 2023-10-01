@@ -5,25 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    public GameObject gameOverMenu;
-
-
-    private void OnEnable()
+  public void LoadScene(string sceneName)
     {
-        Enemy.OnPlayerDeath += EnableGameOverMenu;
+        SceneManager.LoadScene(sceneName);
     }
 
-    private void OnDisable()
-    {
-        Enemy.OnPlayerDeath -= EnableGameOverMenu;
-    }
-    public void EnableGameOverMenu()
-    {
-        gameOverMenu.SetActive(true);
-    }
 
-    public void Restartlevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetSceneByName("Main Menu").buildIndex);
-    }
+
+
 }
